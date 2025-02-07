@@ -1,10 +1,10 @@
-const usarName = "Raimon";
+const userName = "Raimon";
 const password = "Due:0y.^*!Xn>7DFh.o?#@3W";
 const passwordRepeat = "Due:0y.^*!Xn>7DFh.o?#@3W";
 const age = 34;
 
 const regexString = /\w{5,}/g;
-const nameValidation = regexString.test(usarName);
+const nameValidation = regexString.test(userName);
 
 const passwordLength = password.length;
 const passwordLengthValidation = passwordLength >= 8;
