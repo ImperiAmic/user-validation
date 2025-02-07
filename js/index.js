@@ -12,12 +12,12 @@ const passwordLengthValidation = passwordLength >= 8;
 const regexNumber = /\d{1,}/g;
 const passwordNumberValidation = regexNumber.test(password);
 
-const regexMayus = /[A-Z]/g;
-const passwordLetterMayus = regexMayus.test(password);
+const regexMayus = /[A-ZÀ-Ú]/g;
+const passwordLetterMayusValidation = regexMayus.test(password);
 
 const passwordValidation =
   (passwordLengthValidation === passwordNumberValidation) ===
-  passwordLetterMayus;
+  passwordLetterMayusValidation;
 
 const passwordRepeatValidation = passwordRepeat.includes(password);
 
