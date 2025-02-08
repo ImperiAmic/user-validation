@@ -1,6 +1,6 @@
 const userName = "Raimon";
-const password = "Due:0y.^*!Xn>7DFh.o?#@3W";
-const passwordRepeat = "Due:0y.^*!Xn>7DFh.o?#@3W";
+const password = "Dué:0y.^*!Xn>7DFh.Ò?#@3W";
+const passwordRepeat = "Dué:0y.^*!Xn>7DFh.Ò?#@3W";
 const age = 34;
 
 const regexString = /\w{5,}/g;
