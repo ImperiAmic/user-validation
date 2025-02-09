@@ -3,18 +3,17 @@ const password = "Dué:0y.^*!Xn>7DFh.Ò?#@3W";
 const repeatedPassword = "Dué:0y.^*!Xn>7DFh.Ò?#@3W";
 const age = 34;
 
-const usernameValidationRegex = /\w{5,}/g;
-const isUsernameValid = usernameValidationRegex.test(username);
+const usernameMinimumLength = 5;
+const isUsernameValid = username.length >= usernameMinimumLength;
 
 const passwordMinimumLength = 8;
-const passwordLength = password.length;
-const isPasswordLengthValid = passwordLength >= passwordMinimumLength;
+const isPasswordLengthValid = password.length >= passwordMinimumLength;
 
-const passwordNumberValidationRegex = /\d{1,}/g;
+const passwordNumberValidationRegex = /\d/;
 const hasPasswordAtLeastOneNumber =
   passwordNumberValidationRegex.test(password);
 
-const passwordUpperCaseRegex = /[A-ZÀ-Ú]/g;
+const passwordUpperCaseRegex = /[A-ZÀ-Ú]/;
 const hasPasswordAtLeastOneUpperCaseLetter =
   passwordUpperCaseRegex.test(password);
 
