@@ -19,10 +19,11 @@ const hasPasswordAtLeastOneUpperCaseLetter =
   passwordUpperCaseRegex.test(password);
 
 const isPasswordValid =
-  (isPasswordLengthValid === hasPasswordAtLeastOneNumber) ===
+  isPasswordLengthValid &&
+  hasPasswordAtLeastOneNumber &&
   hasPasswordAtLeastOneUpperCaseLetter;
 
-const isPasswordRepeatedValid = repeatedPassword.includes(password);
+const isPasswordRepeatedValid = repeatedPassword === password;
 
 const adultAge = 18;
 const isAgeValid = age >= adultAge;
